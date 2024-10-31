@@ -27,3 +27,11 @@
     "tailwindcss": "^3.4.1"
   }
 }
+"scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "vercel-build": "next build"
+  }
+}
+
