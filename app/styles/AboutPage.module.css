@@ -1,0 +1,107 @@
+/* styles/AboutPage.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Light background for modern look */
+}
+
+.header {
+    background-color: #0070f3; /* Primary color */
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.motto {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.section {
+    background-color: white; /* White background for sections */
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px; /* Limit max width for sections */
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: #0070f3; /* Primary color for headings */
+    margin-bottom: 15px;
+}
+
+.section h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 15px;
+}
+
+.section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.icon {
+    font-size: 1.8rem; /* Slightly larger icons */
+    margin: 0 10px;
+    color: #0070f3; /* Match icon color to primary color */
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #005bb5; /* Darker shade on hover */
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px; /* Limit max width for footer */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Add this to your existing styles/AboutPage.module.css */
+
+.socialMediaIcons {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the icons */
+    margin-top: 10px; /* Space above the icons */
+}
+
+.icon {
+    font-size: 1.8rem; /* Icon size */
+    margin: 0 15px; /* Space between icons */
+    color: #0070f3; /* Match icon color to primary color */
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #005bb5; /* Darker shade on hover */
+}

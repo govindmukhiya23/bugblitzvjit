@@ -1,0 +1,122 @@
+/* Container for the contact page */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f2b38f; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Title styles */
+.title {
+    font-size: 28px; /* Larger font size for emphasis */
+    font-weight: 600; /* Semi-bold for a modern feel */
+    color: #333; /* Dark gray color for readability */
+    margin-bottom: 10px;
+}
+
+/* Description styles */
+.description {
+    font-size: 18px; /* Slightly larger than normal text */
+    color: #666; /* Medium gray for less emphasis */
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+.contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Grouping form elements */
+.formGroup {
+    margin-bottom: 20px; /* Spacing between form groups */
+}
+
+/* Label styles */
+.label {
+    font-size: 16px; /* Consistent font size */
+    font-weight: 500; /* Medium weight for labels */
+    margin-bottom: 5px; /* Space below labels */
+    color: #333; /* Dark color for readability */
+}
+
+/* Input and textarea styles */
+.input, .textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 12px; /* Comfortable padding */
+    font-size: 16px; /* Consistent font size */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    transition: border-color 0.3s ease; /* Smooth transition for focus */
+}
+
+.input:focus, .textarea:focus {
+    border-color: #4CAF50; /* Green border on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Subtle shadow on focus */
+}
+
+/* Button styles */
+.submitButton {
+    background-color: #4CAF50; /* Green background */
+    color: #fff; /* White text */
+    padding: 12px 20px; /* Comfortable padding */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Consistent font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.submitButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Success message styles */
+.successMessage {
+    font-size: 16px; /* Consistent font size */
+    color: #4CAF50; /* Green color for success */
+    margin-bottom: 20px; /* Space below success message */
+}
+
+/* Contact info styles */
+.contactInfo {
+    margin-top: 40px; /* Space above contact info */
+}
+
+/* Individual contact info item */
+.infoItem {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 15px; /* Space between items */
+}
+
+/* Social media icons */
+.socialMedia {
+    margin-top: 20px; /* Space above social media links */
+}
+
+.socialMedia a {
+    color: #333; /* Dark color for icons */
+    margin-right: 15px; /* Space between icons */
+    font-size: 20px; /* Consistent icon size */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.socialMedia a:hover {
+    color: #4CAF50; /* Change color on hover */
+}
+
+/* Map container styles */
+.mapContainer {
+    margin-top: 40px; /* Space above map */
+}
+
+.mapContainer iframe {
+    border: 0; /* Remove default border */
+    width: 100%; /* Full width for map */
+    height: 400px; /* Fixed height for map */
+    border-radius: 4px; /* Rounded corners for map */
+}

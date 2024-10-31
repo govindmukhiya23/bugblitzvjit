@@ -1,0 +1,92 @@
+/* styles/TeamSection.module.css */
+
+.teamSection {
+    padding: 60px 20px;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.memberContainer {
+    display: flex;
+    flex-direction: column; /* Stack items vertically for mobile */
+    align-items: center;
+    position: relative;
+}
+
+.slides {
+    display: flex; /* Allows horizontal layout */
+    transition: transform 0.5s ease;
+    width: 100%; /* Full width to allow sliding */
+}
+
+.member {
+    flex: 0 0 auto; /* Allow members to take their natural width */
+    display: flex;
+    flex-direction: column; /* Stack items vertically for individual members */
+    align-items: center;
+    margin: 0 15px; /* Space between members */
+    transition: transform 0.3s ease; /* Smooth transform effect */
+}
+
+.member:hover {
+    transform: scale(1.05); /* Slight scale on hover */
+}
+
+.photo {
+    width: 150px; /* Fixed size for images */
+    height: 150px; /* Make height equal to width for round shape */
+    border-radius: 50%; /* Round shape */
+    object-fit: cover; /* Ensure images cover the area */
+    margin-bottom: 15px; /* Space between image and text */
+    border: 4px solid #0070f3; /* Blue border for emphasis */
+    box-shadow: 0 0 10px rgba(0, 112, 243, 0.5); /* Soft blue shadow */
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.role {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #0070f3;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #0099ff; /* Highlight active dot */
+}
+
+@media (min-width: 600px) {
+    .memberContainer {
+        flex-direction: row; /* Display in a row on larger screens */
+        justify-content: center;
+        overflow: hidden;
+    }
+}

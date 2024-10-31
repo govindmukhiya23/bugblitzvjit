@@ -1,0 +1,97 @@
+/* styles/Gallery.module.css */
+
+.galleryContainer {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Space between heading and gallery */
+}
+
+.galleryHeading {
+    font-size: 2rem; /* Adjust size as needed */
+    color: #1165ed; /* Change color as desired */
+    margin: 0; /* Remove default margin */
+}
+
+.gallery {
+    position: relative;
+    max-width: 100%; /* Full width of the container */
+    margin: 0 auto; /* Center the gallery */
+    overflow: hidden; /* Hide overflow to create a sliding effect */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.slides {
+    display: flex; /* Align images in a row */
+    transition: transform 0.5s ease; /* Smooth transition for sliding effect */
+}
+
+.card {
+    margin: 5px; /* Reduced margin to fit more cards */
+    padding: 0; /* Remove padding to fit image perfectly */
+    background-color: #fff; /* Card background color */
+    border: 1px solid #ddd; /* Card border */
+    border-radius: 8px; /* Rounded corners for cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s; /* Smooth transform on hover */
+    width: 150px; /* Default width for each card */
+    flex: 0 0 auto; /* Prevent cards from shrinking */
+}
+
+/* Show only 12 photos on larger screens */
+@media (min-width: 1200px) {
+    .slides {
+        max-width: calc(150px * 12); /* Max width for 12 cards */
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .card {
+        width: 150px; /* Smaller width for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 120px; /* Smaller width for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100px; /* Smaller width for mobile devices */
+    }
+}
+
+.card:hover {
+    transform: scale(1.1); /* Scale up card on hover */
+    z-index: 1; /* Ensure hovered card is above others */
+}
+
+.image {
+    width: 100%; /* Make image responsive */
+    height: 150px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensure images cover the card without distortion */
+    border-radius: 5px; /* Rounded corners for the image */
+}
+
+/* Dots styling (if you want to add dots for navigation) */
+.dots {
+    display: flex; /* Align dots in a row */
+    justify-content: center; /* Center dots */
+    margin-top: 10px; /* Space above dots */
+}
+
+.dot {
+    height: 8px; /* Smaller dot size */
+    width: 8px; /* Smaller dot size */
+    margin: 0 4px; /* Adjust margin for smaller dots */
+    background-color: #bbb; /* Inactive dot color */
+    border-radius: 50%; /* Make dots circular */
+    display: inline-block;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.dot.active {
+    background-color: #0070f3; /* Active dot color */
+}

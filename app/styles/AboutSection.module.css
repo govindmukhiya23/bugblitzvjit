@@ -1,0 +1,45 @@
+
+.aboutSection {
+    padding: 2rem;
+    background-color: #f9f9f9; /* Example background color */
+  }
+  
+  .content {
+    max-width: 800px; /* Limit content width */
+    margin: 0 auto; /* Center the content */
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333; /* Title color */
+  }
+  
+  .motto {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    color: #555; /* Motto color */
+  }
+  
+  .subTitle {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #222; /* Subtitle color */
+  }
+  
+  .goalsList,
+  .benefitsList {
+    list-style-type: disc; /* Bullet points */
+    padding-left: 1.5rem; /* Indentation for lists */
+  }
+  
+  .conclusion {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    font-weight: bold;
+    color: #444; /* Conclusion text color */
+  }
+  

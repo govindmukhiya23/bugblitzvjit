@@ -1,0 +1,32 @@
+/* styles/Footer.module.css */
+
+.footer {
+    background-color: #f7f7f7;
+    color: #000000;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.socialMedia {
+    margin-top: 1rem;
+}
+
+.socialMedia a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.socialMedia a:hover {
+    color: #0070f3;
+}
